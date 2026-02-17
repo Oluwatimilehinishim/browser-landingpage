@@ -1,0 +1,205 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body
+{
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    background: linear-gradient(180deg, #040918 0%, #091540 100%);
+}
+
+.header
+{
+   display: flex;
+   align-items: center;
+   width: 90%;
+   height: 3pc;
+   margin: 20px auto;
+   background: rgba(61, 56, 56, 0.582);
+   border-radius: 10px;
+   justify-content: space-between;
+}
+
+.header-nav img
+{
+    width: 30px;
+}
+
+.header-nav
+{
+    display: flex;
+    padding: 15px;
+    gap: 10px;
+}
+
+.header-left img{
+    width: 30px;
+    margin: 20px;
+    background-color: rgba(128, 128, 128, 0.349);
+    border-radius: 7px;
+    padding: 0.4em 0.4em;
+}
+
+.navbar{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 25px auto;
+}
+
+.navbar .activity a{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.349);
+    padding: 0.5em 0.9em;
+    border-radius: 35px;
+    font-size: 15px;
+}
+
+.navbar .activity a:hover{
+    background-color: rgba(128, 128, 128, 0.582);
+}
+
+.navbar .activity a:active{
+    background-color: rgba(255, 11, 11, 0.582);
+}
+
+.all{
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+    margin: 25px auto;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.all .heading{
+    display: flex;
+    /* align-items: center; */
+    gap: 20px;
+}
+
+.all img{
+    background-color: white;
+    padding: 1em 1em;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.all .ln1
+{
+    display: flex;
+    gap: 20px;
+}
+
+.all .ln2
+{
+    display: flex;
+    gap: 20px;
+}
+
+.all .ln3
+{
+    display: flex;
+    gap: 20px;
+}
+
+.all .ln4
+{
+    display: flex;
+    gap: 20px;
+}
+
+.all .container1{
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.349);
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.all .container2{
+    padding: 1em 2em;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.349);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.all .container3{
+    padding: 1em 2em;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.349);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.all .footing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #1f2937;
+  border-radius: 34px;
+  transition: 0.3s;
+  border: 2px solid #334155;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+  background-color: rgb(218, 42, 42);
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(24px);
+  background-color: white;
+}
+
+
+.remove-btn{
+    background-color: transparent;
+    border: 1px solid rgba(252, 252, 252, 0.349);
+    padding: 0.5em 0.9em;
+    border-radius: 35px;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+}
